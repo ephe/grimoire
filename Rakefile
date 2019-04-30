@@ -5,6 +5,7 @@ require 'rubygems'
     require 'yaml'
     require 'tmpdir'
     require 'jekyll'
+    require 'shellwords'
 
     desc "Generate blog files"
     task :generate do
@@ -24,7 +25,7 @@ require 'rubygems'
         system "mv #{tmp}/* ."
         message = "Site updated at #{Time.now.utc}"
         system "git add ."
-        system "git commit -am #{message.shellescape}"
+        system "git commit -am #{message.shellescape()}"
         system "git push origin gh-pages --force"
         system "git checkout master"
         system "echo Published!"
