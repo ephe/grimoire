@@ -1,30 +1,369 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Grimoire</title>
+    <description>A searchable d20 5e spell list, sorted by class and level.</description>
+    <link>ephe.github.io/grimoire/</link>
+    <atom:link href="ephe.github.io/grimoire/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 30 Apr 2019 01:47:58 -0700</pubDate>
+    <lastBuildDate>Tue, 30 Apr 2019 01:47:58 -0700</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Zone of Truth</title>
+        <description>&lt;p&gt;&lt;strong&gt;2nd-level enchantment&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 60 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, S&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: 10 minutes&lt;/p&gt;
+
+&lt;p&gt;You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell’s area for the first time on turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can’t speak a deliberate lie while in the radius. you know whether each creature succeeds or fails on its saving throw.&lt;/p&gt;
+
+&lt;p&gt;An affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 00:00:00 -0700</pubDate>
+        <link>ephe.github.io/grimoire/spells/zone-of-truth</link>
+        <guid isPermaLink="true">ephe.github.io/grimoire/spells/zone-of-truth</guid>
+        
+        <category>bard</category>
+        
+        <category>cleric</category>
+        
+        <category>paladin</category>
+        
+        <category>level2</category>
+        
+        <category>enchantment</category>
+        
+        
+        <category>spells</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Word of Recall</title>
+        <description>&lt;p&gt;&lt;strong&gt;6th-level conjuration&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 5 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Instantaneous&lt;/p&gt;
+
+&lt;p&gt;You and up to five willing creatures within 5 feet of you instantly teleport to a previously designated sanctuary. You and any creatures that teleport with you appear in the nearest unoccupied space to the spot you designated when you prepared your sanctuary (see below). If you cast this spell without first preparing a sanctuary, the spell has no effect.&lt;/p&gt;
+
+&lt;p&gt;You must designate a sanctuary by casting this spell within a location, such as a temple, dedicated to or strongly linked to your deity. If you attempt to cast the spell in this manner in an area that isn’t dedicated to your deity, the spell has no effect.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 00:00:00 -0700</pubDate>
+        <link>ephe.github.io/grimoire/spells/word-of-recall</link>
+        <guid isPermaLink="true">ephe.github.io/grimoire/spells/word-of-recall</guid>
+        
+        <category>cleric</category>
+        
+        <category>level6</category>
+        
+        <category>conjuration</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Wind Wall</title>
+        <description>&lt;p&gt;&lt;strong&gt;3rd-level evocation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 120 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, S, M (a tiny fan and a feather of exotic origin)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Concentration, up to 1 minute&lt;/p&gt;
+
+&lt;p&gt;A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.&lt;/p&gt;
+
+&lt;p&gt;When the wall appears, each creature within its area must make a Strength saving throw. A creature takes 3d8 bludgeoning damage on a failed save, or half as much damage on a successful one.&lt;/p&gt;
+
+&lt;p&gt;The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can’t pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form can’t pass through it.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 00:00:00 -0700</pubDate>
+        <link>ephe.github.io/grimoire/spells/wind-wall</link>
+        <guid isPermaLink="true">ephe.github.io/grimoire/spells/wind-wall</guid>
+        
+        <category>druid</category>
+        
+        <category>ranger</category>
+        
+        <category>level3</category>
+        
+        <category>evocation</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Wind Walk</title>
+        <description>&lt;p&gt;&lt;strong&gt;6th-level transmutation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 minute&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 30 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, S, M (fire and holy water)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: 8 hours&lt;/p&gt;
+
+&lt;p&gt;You and up to ten willing creatures you can see within range assume a gaseous form for the duration, appearing as wisps of cloud. While in this cloud form, a creature has a flying speed of 300 feet and has resistance to damage from nonmagical weapons. The only actions a creature can take in this form are the Dash action or to revert to its normal form. Reverting takes 1 minute, during which time a creature is incapacitated and can’t move. Until the spell ends, a creature can revert to cloud form, which also requires the 1-minute transformation.&lt;/p&gt;
+
+&lt;p&gt;If a creature is in cloud form and flying when the effect ends, the creature descends 60 feet per round for 1 minute until it lands, which it does safely. If it can’t land after 1 minute, the creature falls the remaining distance.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 00:00:00 -0700</pubDate>
+        <link>ephe.github.io/grimoire/spells/wind-walk</link>
+        <guid isPermaLink="true">ephe.github.io/grimoire/spells/wind-walk</guid>
+        
+        <category>druid</category>
+        
+        <category>level6</category>
+        
+        <category>transmutation</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Web</title>
+        <description>&lt;p&gt;&lt;strong&gt;2nd-level conjuration&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 60 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, S, M (a bit of spiderweb)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Concentration, up to 1 hour&lt;/p&gt;
+
+&lt;p&gt;You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.&lt;/p&gt;
+
+&lt;p&gt;If the webs aren’t anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.&lt;/p&gt;
+
+&lt;p&gt;Each creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw. On a failed save, the creature is restrained as long as it remains in the webs or until it breaks free.&lt;/p&gt;
+
+&lt;p&gt;A creature restrained by the webs can use its action to make a Strength cheek against your spell save DC. If it succeeds, it is no longer restrained.&lt;/p&gt;
+
+&lt;p&gt;The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 00:00:00 -0700</pubDate>
+        <link>ephe.github.io/grimoire/spells/web</link>
+        <guid isPermaLink="true">ephe.github.io/grimoire/spells/web</guid>
+        
+        <category>sorcerer</category>
+        
+        <category>wizard</category>
+        
+        <category>level2</category>
+        
+        <category>conjuration</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Water Walk</title>
+        <description>&lt;p&gt;&lt;strong&gt;3rd-level transmutation (ritual)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 30 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, S, M (a piece of cork)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: 1 hour&lt;/p&gt;
+
+&lt;p&gt;This spell grants the ability to move across any liquid surface–such as water, acid, mud, snow, quicksand, or lava–as if it were harmless solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures you can see within range gain this ability for the duration.&lt;/p&gt;
+
+&lt;p&gt;If you target a creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 00:00:00 -0700</pubDate>
+        <link>ephe.github.io/grimoire/spells/water-walk</link>
+        <guid isPermaLink="true">ephe.github.io/grimoire/spells/water-walk</guid>
+        
+        <category>cleric</category>
+        
+        <category>druid</category>
+        
+        <category>ranger</category>
+        
+        <category>sorcerer</category>
+        
+        <category>level2</category>
+        
+        <category>transmutation</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Water Breathing</title>
+        <description>&lt;p&gt;&lt;strong&gt;3rd-level transmutation (ritual)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 30 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, S, M (a short reed or piece of straw)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: 24 hours&lt;/p&gt;
+
+&lt;p&gt;This spell grants up to ten willing creatures you can see within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 00:00:00 -0700</pubDate>
+        <link>ephe.github.io/grimoire/spells/water-breathing</link>
+        <guid isPermaLink="true">ephe.github.io/grimoire/spells/water-breathing</guid>
+        
+        <category>druid</category>
+        
+        <category>ranger</category>
+        
+        <category>sorcerer</category>
+        
+        <category>wizard</category>
+        
+        <category>level3</category>
+        
+        <category>transmutation</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Wall of Thorns</title>
+        <description>&lt;p&gt;&lt;strong&gt;6th-level conjuration&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 120 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, S, M (a handful of thorns)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Concentration, up to 10 minutes&lt;/p&gt;
+
+&lt;p&gt;You create a wall of tough, pliable, tangled brush bristling with needle-sharp thorns. The wall appears within range on a solid surface and lasts for the duration. You choose to make the wall up to 60 feet long, 10 feet high, and 5 feet thick or a circle that has a 20-foot diameter and is up to 20 feet high and 5 feet thick. The wall blocks line of sight.&lt;/p&gt;
+
+&lt;p&gt;When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 7d8 piercing damage, or half as much damage on a successful save.&lt;/p&gt;
+
+&lt;p&gt;A creature can move through the wall, albeit slowly and painfully. For every 1 foot a creature moves through the wall, it must spend 4 feet of movement. Furthermore, the first time a creature enters the wall on a turn or ends its turn there, the creature must make a Dexterity saving throw. It takes 7d8 slashing damage on a failed save, or half as much damage on a successful one.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;At Higher Levels.&lt;/strong&gt; When you cast this spell using a spell slot of 7th level or higher, both types of damage increase by 1d8 for each slot level above 6th.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 00:00:00 -0700</pubDate>
+        <link>ephe.github.io/grimoire/spells/wall-of-thorns</link>
+        <guid isPermaLink="true">ephe.github.io/grimoire/spells/wall-of-thorns</guid>
+        
+        <category>druid</category>
+        
+        <category>level6</category>
+        
+        <category>conjuration</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Wall of Stone</title>
+        <description>&lt;p&gt;&lt;strong&gt;5th-level evocation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 120 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, S, M (a small block of granite)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Concentration, up to 10 minutes&lt;/p&gt;
+
+&lt;p&gt;A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick.&lt;/p&gt;
+
+&lt;p&gt;If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall.&lt;/p&gt;
+
+&lt;p&gt;The wall can have any shape you desire, though it can’t occupy the same space as a creature or object. The wall doesn’t need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp.&lt;/p&gt;
+
+&lt;p&gt;If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on.&lt;/p&gt;
+
+&lt;p&gt;The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the DM’s discretion.&lt;/p&gt;
+
+&lt;p&gt;If you maintain your concentration on this spell for its whole duration, the wall becomes permanent and can’t be dispelled. Otherwise, the wall disappears when the spell ends.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 00:00:00 -0700</pubDate>
+        <link>ephe.github.io/grimoire/spells/wall-of-stone</link>
+        <guid isPermaLink="true">ephe.github.io/grimoire/spells/wall-of-stone</guid>
+        
+        <category>druid</category>
+        
+        <category>sorcerer</category>
+        
+        <category>wizard</category>
+        
+        <category>level5</category>
+        
+        <category>evocation</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Wall of Ice</title>
+        <description>&lt;p&gt;&lt;strong&gt;6th-level evocation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 120 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, S, M (a small piece of quartz)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Concentration, up to 10 minutes&lt;/p&gt;
+
+&lt;p&gt;You create a wall of ice on a solid surface within range. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel. In any form, the wall is 1 foot thick and lasts for the duration.&lt;/p&gt;
+
+&lt;p&gt;If the wall cuts through a creature’s space when it appears, the creature within its area is pushed to one side of the wall and must make a Dexterity saving throw. On a failed save, the creature takes 10d6 cold damage, or half as much damage on a successful save.&lt;/p&gt;
+
+&lt;p&gt;The wall is an object that can be damaged and thus breached. It has AC 12 and 30 hit points per 10-foot section, and it is vulnerable to fire damage. Reducing a 10-foot section of wall to 0 hit points destroys it and leaves behind a sheet of frigid air in the space the wall occupied. A creature moving through the sheet of frigid air for the first time on a turn must make a Constitution saving throw. That creature takes 5d6 cold damage on a failed save, or half as much damage on a successful one.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;At Higher Levels&lt;/strong&gt;. When you cast this spell using a spell slot of 7th level or higher, the damage the wall deals when it appears increases by 2d6, and the damage from passing through the sheet of frigid air increases by 1d6, for each slot level above 6th.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2015 00:00:00 -0700</pubDate>
+        <link>ephe.github.io/grimoire/spells/wall-of-ice</link>
+        <guid isPermaLink="true">ephe.github.io/grimoire/spells/wall-of-ice</guid>
+        
+        <category>wizard</category>
+        
+        <category>level6</category>
+        
+        <category>evocation</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
   </channel>
 </rss>

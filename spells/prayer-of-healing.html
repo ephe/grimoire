@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Prayer of Healing</title>
+    <meta name="description" content="A searchable d20 5e spell list, sorted by class and level.">
+
+    <link rel="stylesheet" href="/grimoire/css/main.css">
+    <link rel="canonical" href="ephe.github.io/grimoire/spells/prayer-of-healing">
+    <script src="http://use.typekit.net/nra6zxt.js"></script>
+    <script src="/grimoire/js/jets.min.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript">
+    	function menuClick() {
+    		if ( document.getElementById("menu").className.match(/(?:^|\s)show(?!\S)/) ) {
+    			document.getElementById("menu").className = document.getElementById("menu").className.replace ( /(?:^|\s)show(?!\S)/g , '' )
+    		}
+    		else {
+    			document.getElementById("menu").className += " show";
+    		}
+  		}
+
+        function schoolClick(e) {
+            var schools = Array.prototype.slice.call(document.querySelectorAll('.spell-school:not([name="all"])')),
+                selected = e.target,
+                tags = [];
+
+            if (selected.nodeName !== 'A') return;
+            if (selected.name == 'all') {
+                selected.classList.add('selected');
+                schools.forEach(function(school) {
+                    school.classList.remove('selected');
+                });
+            }
+            else {
+                document.querySelector('.spell-school[name="all"]').classList.remove('selected');
+                selected.classList.toggle('selected');
+                tags = Array.prototype.slice.call(document.querySelectorAll('.spell-school.selected')).map(function(el) { return el.name; });
+            }
+
+            filterSpells(tags);
+        }
+
+        /**
+         * Hide/show spells based on presence of at least one of the given tags.
+         */
+        function filterSpells(tags) {
+            var spells = document.querySelectorAll('.post-list li'),
+                selector,
+                unselected
+
+            // Start by making previously hidden spells visible again
+            // (this does not conflict with jets search filtering)
+            Array.prototype.slice.call(spells).forEach(function(spell) {
+                spell.style.display = '';
+            });
+
+            if (tags.length == 0) return;
+
+            // Hide all spells where all of the given tags are not present
+            selector = tags.map(function(tag) { return ':not([tags~="' + tag + '"])'; });
+            unselected = document.querySelectorAll('.post-list .post-link' + selector.join(''));
+            Array.prototype.slice.call(unselected).forEach(function(spell) {
+                spell.parentNode.style.display = 'none';
+            });
+        }
+
+  		window.onload = function(){
+        document.getElementById("menuIcon").addEventListener( 'click' , menuClick );
+        document.querySelector(".schools-list").addEventListener( 'click', schoolClick );
+	    }
+    </script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+  <a id="top"></a>
+  <div class="wrapper">
+    <nav class="site-nav">
+      <a class="site-title" href="/grimoire/">Grimoire</a>
+      <a href="#" id="menuIcon" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div id="menu" class="trigger">
+        
+          <a class="page-link" href="/grimoire/tags/bard.html">Bard</a>
+        
+          <a class="page-link" href="/grimoire/tags/cleric.html">Cleric</a>
+        
+          <a class="page-link" href="/grimoire/tags/druid.html">Druid</a>
+        
+          <a class="page-link" href="/grimoire/tags/paladin.html">Paladin</a>
+        
+          <a class="page-link" href="/grimoire/tags/ranger.html">Ranger</a>
+        
+          <a class="page-link" href="/grimoire/tags/sorcerer.html">Sorcerer</a>
+        
+          <a class="page-link" href="/grimoire/tags/warlock.html">Warlock</a>
+        
+          <a class="page-link" href="/grimoire/tags/wizard.html">Wizard</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Prayer of Healing</h1>
+    <dl class="tag-list">
+    <dt>Tags:</dt>
+    
+    <dd>
+        
+          <a href="/grimoire/tags/cleric.html">cleric</a>
+        
+    </dd>
+    
+    <dd>
+        
+          <a href="/grimoire/#level2">level2</a>
+        
+    </dd>
+    
+    <dd>
+        
+          <a href="/grimoire/tags/evocation.html">evocation</a>
+        
+    </dd>
+    
+  </header>
+
+  <article class="post-content">
+    <p><strong>2nd-level evocation</strong></p>
+
+<p><strong>Casting Time</strong>: 10 minutes</p>
+
+<p><strong>Range</strong>: 30 feet</p>
+
+<p><strong>Components</strong>: V</p>
+
+<p><strong>Duration</strong>: Instantaneous</p>
+
+<p>Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
+
+<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd.</p>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Grimoire</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li><p class="text">A searchable d20 5e spell list, sorted by class and level. All spells from the <a href="http://5e.d20srd.org/index.htm">d20 5e SRD</a>, as offered 
+          under the <a href="http://5e.d20srd.org/ogl.htm">Open Game License</a>.</p></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <p>Dr. <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> tempts fickle fate in his pursuit of the <a href="http://www.sublimetext.com/" target="_blank">sublime</a>.</p>
+        <p>Source available on <a href="https://github.com/ephe/grimoire/" target="_blank">Github</a>.</p>
+      </div>
+    
+    <div class="footer-col  footer-col-3">
+      <p>The Grimoire is not affiliated with Wizards of the Coast, Inc.</p>
+    </div>
+  </div>
+  <div class="footer-top-link"><a href="#top">Back to top &#8593;</a></div>
+
+  </div>
+
+</footer>
+<script>
+  var jets = new Jets({
+    searchTag: '#jetsSearch',
+    contentTag: '.jetsContent',
+    didSearch: function(search_phrase) {
+      var elements = document.getElementsByClassName("jetsHide");
+      if (!search_phrase.trim()) {
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].classList.remove("searchHide");
+        }
+      } else {
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].classList.add("searchHide");
+        }
+      }     
+    }
+  })
+  </script>
+
+
+  </body>
+
+</html>
